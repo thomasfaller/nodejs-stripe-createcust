@@ -1,0 +1,17 @@
+{
+  "name": "replaced-by-user-input",
+  "description": "replaced-by-user-input",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "stripe": "^8.84.0"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "rm -rf .aws-sam && sam build && sam local invoke -e ./event.json"
+  }
+}
